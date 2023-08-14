@@ -60,4 +60,9 @@ class Rows implements Countable, IteratorAggregate
     {
         return new ArrayIterator($this->rows);
     }
+
+    public function getRows(): array
+    {
+        return $this->rows;
+    }
 }
